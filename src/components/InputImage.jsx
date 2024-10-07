@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import InputTitle from "./InputTitle";
+import InputTitle from "./InputTitle.jsx";
 
 export const InputContainer = styled.div`
   display: flex;
@@ -12,25 +12,21 @@ const FileInputContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 10px;
-  background: #fafafa;
-  border: 1px solid #dddddd;
-  border-radius: 6px;
+  width: 400px;
+  gap: 10px;
 `;
 
 const FileInputLabel = styled.label`
   display: inline-block;
   padding: 10px 20px;
-  background: #282828;
-  color: #fff;
+  background: #fafafa;
+  color: #282828;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
-
-  &:hover {
-    background: #1b1b1b;
-  }
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
 `;
 
 const HiddenFileInput = styled.input`
@@ -40,6 +36,11 @@ const HiddenFileInput = styled.input`
 const SelectedFileName = styled.span`
   font-size: 14px;
   color: #666;
+  width: 290px;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
 `;
 
 const InputImage = () => {

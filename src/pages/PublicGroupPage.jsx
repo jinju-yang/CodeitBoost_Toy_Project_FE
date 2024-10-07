@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { CardIllust, CardPublic } from "../components/Card";
 import DropDown from "../components/DropDown";
-import GlobalNav from "../components/GlobalNav";
+import GlobalNav from "../components/GlobalNav.jsx";
 import More from "../components/More";
 import Search from "../components/Search";
 import { PublicTabs } from "../components/Tabs";

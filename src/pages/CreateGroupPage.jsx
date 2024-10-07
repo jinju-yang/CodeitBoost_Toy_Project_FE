@@ -3,8 +3,8 @@ import { InputText, InputPassword } from "../components/InputText";
 import InputImage from "../components/InputImage";
 import InputBox from "../components/InputBox";
 import Toggle from "../components/Toggle";
-import InputTitle from "../components/InputTitle";
-import GlobalNav from "../components/GlobalNav";
+import InputTitle from "../components/InputTitle.jsx";
+import GlobalNav from "../components/GlobalNav.jsx";
 import { Button_L } from "../components/Button";
 
 const CreateGroupPageContainer = styled.div`

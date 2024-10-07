@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import InputTitle from "./InputTitle";
+import InputTitle from "./InputTitle.jsx";
 
 const InputTextContainer = styled.input`
   box-sizing: border-box;

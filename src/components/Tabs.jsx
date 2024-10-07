@@ -8,24 +8,30 @@ const TabsContainer = styled.div`
 
 export const PublicTabs = ({ isActive }) => {
   const navigate = useNavigate(); // useNavigate 훅 사용
-  
+
   const handlePrivateClick = () => {
     navigate("/private");
   };
 
   return (
     <TabsContainer>
-      <Tab isPublic={true} isActive={true} onClick={handlePrivateClick}/>
-      <Tab />
+      <Tab isPublic={true} isActive={true} />
+      <Tab onClick={handlePrivateClick} />
     </TabsContainer>
   );
 };
 
 export const PrivateTabs = ({ isActive }) => {
+  const navigate = useNavigate(); // useNavigate 훅 사용
+
+  const handlePublcClick = () => {
+    navigate("/public");
+  };
+
   return (
     <TabsContainer>
-      <Tab isPublic={true} />
-      <Tab isActive={true} onClick={handlePrivateClick} />
+      <Tab isPublic={true}  onClick={handlePublcClick}/>
+      <Tab isActive={true} />
     </TabsContainer>
   );
 };

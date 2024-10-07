@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button_M } from "../components/Button";
-import GlobalNav from "../components/GlobalNav";
+import GlobalNav from "../components/GlobalNav.jsx";
 import { NoGroup } from "../components/None";
 import { PageTop } from "./PublicGroupPage";
 import { PageContainer } from "./PublicGroupPage";

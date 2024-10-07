@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import GlobalNav from "../components/GlobalNav";
+import GlobalNav from "../components/GlobalNav.jsx";
 import { Button_L } from "../components/Button";
 import { InputPassword } from "../components/InputText";
 

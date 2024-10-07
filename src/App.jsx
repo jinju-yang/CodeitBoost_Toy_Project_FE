@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Test from "./pages/Test";
 import PublicGroupPage from "./pages/PublicGroupPage";
 import PrivateGroupPage from "./pages/PrivateGroupPage";
@@ -11,8 +11,8 @@ import {
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/">
+    <BrowserRouter>
+      <Routes>
         <Route path="/test" element={<Test />} />
         <Route path="/public" element={<PublicGroupPage />} />
         <Route path="/private" element={<PrivateGroupPage />} />
@@ -20,8 +20,9 @@ const App = () => {
         <Route path="/newgroup" element={<CreateGroupPage />} />
         <Route path="/grouppw" element={<GroupPasswordCheckPage />} />
         <Route path="/privatepw" element={<PrivatePassWordCheckPage />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </BrowserRouter>
   );
 };
+
 export default App;
