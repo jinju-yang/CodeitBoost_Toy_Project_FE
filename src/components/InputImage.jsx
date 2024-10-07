@@ -13,6 +13,7 @@ const FileInputContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 400px;
+  height: 45px;
   gap: 10px;
 `;
 
@@ -37,7 +38,7 @@ const SelectedFileName = styled.span`
   font-size: 14px;
   color: #666;
   width: 290px;
-  padding: 10px;
+  padding: 10px 20px;
   background: #fafafa;
   border: 1px solid #dddddd;
   border-radius: 6px;
@@ -58,7 +59,7 @@ const InputImage = () => {
       <InputTitle content={"대표 이미지"} />
       <FileInputContainer>
         <SelectedFileName>
-          {selectedFile ? selectedFile : "선택된 파일 없음"}
+          {selectedFile ? selectedFile : "파일을 선택해주세요"}
         </SelectedFileName>
         <FileInputLabel htmlFor="fileInput">파일 선택</FileInputLabel>
         <HiddenFileInput

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import InputTitle from "./InputTitle";
+import rmvButton from "../../public/icons/icon=x.svg";
 
 const InputContainer = styled.div`
   display: flex;
@@ -28,18 +30,10 @@ const TagList = styled.div`
 const TagItem = styled.div`
   display: flex;
   align-items: center;
-  background: #282828;
-  color: #fff;
+  color: #8d8d8d;
   padding: 8px 12px;
   border-radius: 20px;
   font-size: 14px;
-`;
-
-const RemoveButton = styled.span`
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #ff4d4d;
 `;
 
 const InputTag = () => {
@@ -62,6 +56,7 @@ const InputTag = () => {
 
   return (
     <InputContainer>
+      <InputTitle content={"태그"} />
       <InputTagContainer
         type="text"
         placeholder="태그를 입력하고 Enter를 누르세요"
@@ -72,10 +67,8 @@ const InputTag = () => {
       <TagList>
         {tags.map((tag, index) => (
           <TagItem key={index}>
-            #{tag} {/* 태그 앞에 # 표시 */}
-            <RemoveButton onClick={() => handleRemoveTag(index)}>
-              X
-            </RemoveButton>
+            #{tag}
+            <img src={rmvButton} onClick={() => handleRemoveTag(index)} />
           </TagItem>
         ))}
       </TagList>

@@ -7,7 +7,7 @@ const BadgeContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 30px;
+  padding: 5px 25px;
   gap: 10px;
 
   /* width: 100%; */ /* 제거된 부분: 너비를 고정하지 않음 */

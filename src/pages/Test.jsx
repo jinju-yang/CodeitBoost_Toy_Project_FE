@@ -21,13 +21,12 @@ import { NoGroup, NoMemory } from "../components/None";
 const Test = () => {
   return (
     <>
-      <GlobalNav />
       <GlobalNav buttonValid={true} />
-      <Button_M content={"작은 버튼"} />
-      <Button_L content={"큰 버튼"} />
       <Badge content={"👾 7일 연속 추억 등록"} />
       <Badge content={"💖 게시글 공감 1만 개 이상 받기"} />
       <Badge content={"🌼 그룹 공감 1만 개 이상 받기"} />
+      <Button_M content={"작은 버튼"} />
+      <Button_L content={"큰 버튼"} />
       <Toggle />
       <PublicTabs />
       <PrivateTabs />
@@ -41,7 +40,7 @@ const Test = () => {
         modalContent={"그룹이 성공적으로 등록되었습니다."}
       />
       <InputText />
-      <InputPassword />
+      <InputPassword placeholder={"그룹 비밀번호를 생성해주세요"} />
       <InputImage />
       <InputTag />
       <InputBox />

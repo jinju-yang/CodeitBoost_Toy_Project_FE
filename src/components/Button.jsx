@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ButtonContainer = styled.div`
+const ButtonContainer = styled.button`
   /* size=L */
 
   /* Auto layout */
@@ -8,7 +8,6 @@ const ButtonContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 15px 178px;
   gap: 10px;
   width: ${(props) => (props.isLarge ? "400px" : "200px")};
   height: 45px;

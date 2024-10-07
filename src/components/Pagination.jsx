@@ -12,6 +12,7 @@ const SquareContainer = styled.div`
   width: 45px;
   height: 45px;
   background: ${(props) => (props.selected ? "#282828" : "#FAFAFA")};
+  color: ${(props) => (props.selected ? "#FFFFFF" : "#282828")};
   border: 1px solid #b8b8b8;
   border-radius: 6px;
   flex: none;

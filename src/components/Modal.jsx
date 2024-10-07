@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button_M } from "./Button";
+import { Button_L } from "./Button";
 
 const ModalContainer = styled.div`
   /* gray/gray_FAFAFA */
@@ -10,8 +10,8 @@ const ModalContainer = styled.div`
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  gap: 40px;
   justify-content: center;
+  gap: 40px;
   align-items: center;
 `;
 
@@ -47,7 +47,7 @@ const Modal = ({ modalTitle, modalContent }) => {
     <ModalContainer>
       <ModalTitleContainer>{modalTitle}</ModalTitleContainer>
       <ModalTextContainer>{modalContent}</ModalTextContainer>
-      <Button_M content={"확인"} />
+      <Button_L content={"확인"} />
     </ModalContainer>
   );
 };

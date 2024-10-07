@@ -6,17 +6,17 @@ const SearchContainer = styled.div`
 
   /* Auto layout */
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 10px 20px;
   gap: 10px;
 
-  width: 3025px;
+  width: 1186px;
   height: 45px;
 
   /* gray/gray_F4F4F4 */
   background: #f4f4f4;
   border-radius: 6px;
+  color: #B8B8B8;
 `;
 
 const Search = () => {

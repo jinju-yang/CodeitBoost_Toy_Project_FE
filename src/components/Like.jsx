@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import favicon from "../../public/favicon/size=32_32.svg";
 
-const LikeContainer = styled.div`
+const LikeContainer = styled.button`
   /* like */
 
   box-sizing: border-box;
