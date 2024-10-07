@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const ButtonContainer = styled.button`
   /* size=L */
-
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -11,7 +10,7 @@ const ButtonContainer = styled.button`
   gap: 10px;
   width: ${(props) => (props.isLarge ? "400px" : "200px")};
   height: 45px;
-
+  display: block;
   /* black/black_282828 */
   background: #282828;
   border-radius: 6px;

@@ -7,6 +7,9 @@ const NoneContainer = styled.div`
   justify-content: center;
   align-items: center;
   color: #8d8d8d;
+  gap: 30px;
+  margin-bottom: 180px;
+  box-sizing: border-box;
 `;
 
 export const NoGroup = () => {

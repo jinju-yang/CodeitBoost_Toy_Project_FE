@@ -8,6 +8,7 @@ import {
   GroupPasswordCheckPage,
   PrivatePassWordCheckPage,
 } from "./pages/PasswordCheckPage";
+import NewMemoryPage from "./pages/NewMemoryPage";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/newgroup" element={<CreateGroupPage />} />
         <Route path="/grouppw" element={<GroupPasswordCheckPage />} />
         <Route path="/privatepw" element={<PrivatePassWordCheckPage />} />
+        <Route path="/newmemory" element={<NewMemoryPage />} />
       </Routes>
     </BrowserRouter>
   );

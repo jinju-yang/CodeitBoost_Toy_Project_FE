@@ -15,6 +15,7 @@ const MoreContainer = styled.div`
   /* black/black_282828 */
   border: 1px solid #282828;
   border-radius: 6px;
+  margin: 60px 0;
 `;
 
 const MoreTextContainer = styled.div`

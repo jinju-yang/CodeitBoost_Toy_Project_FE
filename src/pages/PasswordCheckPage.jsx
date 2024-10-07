@@ -12,8 +12,12 @@ const PasswordCheckPageContainer = styled.div`
 `;
 
 const PageTitle = styled.h2`
-  margin-top: 150px;
+  margin-top: 130px;
 `;
+
+const ButtonContainer = styled.div`
+  margin-bottom: 261px;
+`
 
 export const GroupPasswordCheckPage = () => {
   return (
@@ -34,7 +38,8 @@ export const PrivatePassWordCheckPage = () => {
       <PageTitle>비공개 추억</PageTitle>
       <div>비공개 추억에 접근하기 위해 권한 확인이 필요합니다.</div>
       <InputPassword placeholder={"추억 비밀번호를 입력해 주세요"} />
-      <Button_L content={"제출하기"} />
+      <ButtonContainer>
+      <Button_L content={"제출하기"} /></ButtonContainer>
     </PasswordCheckPageContainer>
   );
 };

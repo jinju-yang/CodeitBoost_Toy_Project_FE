@@ -154,9 +154,9 @@ export const CardPublic = () => {
           {cardInfo.find((item) => item.label === "memory").content}
         </CardBottom>
         <CardBottom>
-          <FirstDiv>{"공감"}</FirstDiv>
+          <FirstDiv>{"그룹 공감"}</FirstDiv>
           <div>
-            <img src={favicon} />
+            <img src={favicon} />{" "}
             {formatNumber(
               cardInfo.find((item) => item.label === "like").content
             )}
@@ -207,7 +207,7 @@ export const CardIllust = () => {
         <CardBottom>
           <FirstDiv>{"그룹 공감"}</FirstDiv>
           <div>
-            <img src={favicon} />
+            <img src={favicon} />{" "}
             {formatNumber(
               cardInfo.find((item) => item.label === "like").content
             )}
@@ -248,7 +248,7 @@ export const CardPrivate = ({ isPrivate }) => {
         <CardBottom>
           <FirstDiv>{"그룹 공감"}</FirstDiv>
           <div>
-            <img src={favicon} />
+            <img src={favicon} />{" "}
             {formatNumber(
               cardInfo.find((item) => item.label === "like").content
             )}

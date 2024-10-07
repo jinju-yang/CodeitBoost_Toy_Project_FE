@@ -5,25 +5,21 @@ import logo from "../../public/logo.svg";
 const GlobalNavContainer = styled.div`
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  gap: 493px;
+  justify-content: center;
   align-items: center;
   height: 100px;
-  width: 100%;
-`;
-
-const LogoContainer = styled.img`
-  margin-left: 910px;
+  width: 99vw;
 `;
 
 const ButtonContainer = styled.div`
-  margin-right: 180px;
+  position: absolute;
+  left: 83%;
 `;
 
 const GlobalNav = ({ buttonValid }) => {
   return (
     <GlobalNavContainer>
-      <LogoContainer src={logo} />
+      <img src={logo} />
       <ButtonContainer>
         {buttonValid && <Button_M content={"그룹 만들기"} />}
       </ButtonContainer>

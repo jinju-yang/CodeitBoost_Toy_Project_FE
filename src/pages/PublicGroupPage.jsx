@@ -9,19 +9,19 @@ import { PublicTabs } from "../components/Tabs";
 export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
 `;
 
 export const PageTopContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
-  width: 90%;
+  width: 89vw;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 60px;
-  position: relative; /* DropDown 위치를 부모 기준으로 설정 */
+  position: relative;
 `;
 
 export const CardContainer = styled.div`
@@ -30,7 +30,6 @@ export const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-bottom: 60px;
 `;
 
 export const PageTop = () => {

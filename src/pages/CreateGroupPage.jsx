@@ -10,9 +10,9 @@ import { Button_L } from "../components/Button";
 const CreateGroupPageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 `;
 
 const InputContainer = styled.div`
@@ -27,6 +27,10 @@ const ToggleContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 23px;
+`;
+
+const ButtonContainer = styled.div`
+  margin-bottom: 68px;
 `;
 
 const CreateGroupPage = () => {
@@ -44,7 +48,10 @@ const CreateGroupPage = () => {
         </ToggleContainer>
         <InputPassword placeholder={"그룹 비밀번호를 생성해 주세요"} />
       </InputContainer>
-      <Button_L content={"만들기"} />
+      <ButtonContainer>
+        {" "}
+        <Button_L content={"만들기"} />
+      </ButtonContainer>
     </CreateGroupPageContainer>
   );
 };

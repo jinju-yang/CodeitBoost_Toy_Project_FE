@@ -43,7 +43,7 @@ const OptionItem = styled.div`
   padding: 5px 0;
   cursor: pointer;
   color: ${(props) => (props.option ? "#282828" : "#8D8D8D")};
-
+  text-align: left;
   &:hover {
     background-color: #f0f0f0;
     color: #282828;
